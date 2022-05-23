@@ -16,11 +16,7 @@ function solve(inputArray) {
             }
         }
         }
-        // for (let col = 0; col < inputArray[0].length; col++) {
-        //     if (inputArray[inputArray.length - 1][col] === inputArray[inputArray.length - 1][col + 1]) {
-        //         countEqualPairs += 1;
-        //     }
-        // }
+
         return countEqualPairs;
     }
 
