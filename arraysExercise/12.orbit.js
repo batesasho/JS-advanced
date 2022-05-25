@@ -11,7 +11,7 @@ function orbit(inputCoordinatesArray) {
     }
     arrayOrbit[x][y] = 1;
 
-    let distanceToCurrentPosition = 0; // distance between Initial and current position - taken max between row and column comparison
+    let distanceToCurrentPosition = 0; // distance between Initial and Current loop position  - takes max between row and column comparison
 
     for (let row = 0; row < arrayOrbit.length; row++) {
         for (let col = 0; col < arrayOrbit[0].length; col++) {
