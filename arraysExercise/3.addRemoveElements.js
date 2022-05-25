@@ -1,9 +1,9 @@
 function solve(inputArray) {
-    let currentAction = "";
+    let currentAction = String();
     let initialValue = 1;
     let modifiedArray = [];
     while (inputArray.length > 0) {
-        currentAction = inputArray.pop();
+        currentAction = inputArray.shift();
 
         if (currentAction === "add") {
             modifiedArray.push(initialValue);
@@ -20,6 +20,6 @@ function solve(inputArray) {
 
 }
 
-solve(['add', 'add', 'add', 'add'])
-solve(['add', 'add', 'remove', 'add', 'add'])
-solve(['remove', 'remove', 'remove'])
+// solve(['add', 'add', 'add', 'add'])
+// solve(['add', 'add', 'remove', 'add', 'add'])
+solve(['remove', 'add', 'add'])
