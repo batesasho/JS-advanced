@@ -20,6 +20,6 @@ function solve(inputArray) {
 
 }
 
-// solve(['add', 'add', 'add', 'add'])
-// solve(['add', 'add', 'remove', 'add', 'add'])
+solve(['add', 'add', 'add', 'add'])
+solve(['add', 'add', 'remove', 'add', 'add'])
 solve(['remove', 'add', 'add'])
