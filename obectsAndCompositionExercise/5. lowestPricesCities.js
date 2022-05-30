@@ -1,23 +1,23 @@
 function solve(inputArray) {
     let productArray = [];
-    let productObject = {};
+
     inputArray.forEach(rowArray => {
-
+        let productObject = {};
         let splitRowArray = rowArray.split(' | ');
-        productArray.push(splitRowArray)
-        productArray.sort((a,b)=>a[2]-b[2])
 
-
-        let [townName, productName, productPrice] = [splitRowArray[0], splitRowArray[1], Number(splitRowArray[2])];
-        productObject[productName] = [townName, Number(productPrice)];
-        // productArray.push(productObject);
+        [productObject['townName'], productObject['productName'], productObject['productPrice']] = [splitRowArray[0], splitRowArray[1], Number(splitRowArray[2])];
+        productArray.push(productObject);
     })
-    console.log(productArray)
-    console.log(result)
+    productArray.sort((a, b) => a.productName.localeCompare(b.productName) || a.productPrice - b.productPrice)
+
+    let filteredObjectArray = new Set();
+    productArray.forEach(elementObject => filteredObjectArray.add(elementObject))
 
 
-    // console.log(productObject);
+    console.log(filteredObjectArray);
 
+
+    // console.log(productArray)
 
 }
 
